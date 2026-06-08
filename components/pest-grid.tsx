@@ -26,20 +26,20 @@ export function PestGrid() {
               <a
                 key={pest.slug}
                 href="#presupuesto"
-                className="group flex items-center gap-3 rounded-xl border border-border bg-card p-4 transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md"
+                className="group flex flex-col items-center gap-3 rounded-xl border border-border bg-card p-4 text-center transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md sm:flex-row sm:items-center sm:text-left"
               >
                 <span className="flex size-11 shrink-0 items-center justify-center rounded-lg bg-secondary text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                   <Icon className="size-5" />
                 </span>
-                <span className="min-w-0">
-                  <span className="block truncate text-sm font-bold text-foreground">
+                <span className="min-w-0 flex-1">
+                  <span className="block text-sm font-bold leading-tight text-foreground">
                     {pest.name}
                   </span>
-                  <span className="block truncate text-xs text-muted-foreground">
+                  <span className="mt-0.5 block text-xs leading-tight text-muted-foreground">
                     {pest.short}
                   </span>
                 </span>
-                <ArrowRight className="ml-auto size-4 shrink-0 text-muted-foreground/0 transition-all group-hover:translate-x-0.5 group-hover:text-primary" />
+                <ArrowRight className="hidden size-4 shrink-0 text-muted-foreground/0 transition-all group-hover:translate-x-0.5 group-hover:text-primary sm:block" />
               </a>
             )
           })}
