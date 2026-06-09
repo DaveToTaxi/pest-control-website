@@ -1,4 +1,6 @@
+import { Phone } from "lucide-react"
 import { LinkButton } from "@/components/link-button"
+import { company } from "@/lib/site-data"
 
 export function CtaBand() {
   return (
@@ -11,11 +13,15 @@ export function CtaBand() {
                 ¿Tienes una urgencia? Vamos hoy mismo.
               </h2>
               <p className="mt-4 max-w-md text-pretty leading-relaxed text-muted-foreground">
-                Nuestros equipos cubren toda la zona oeste de Madrid. Solicita
-                un técnico y estará en tu puerta en el menor tiempo posible.
+                Nuestros equipos cubren toda la zona oeste de Madrid. Llámanos y
+                un técnico estará en tu puerta en el menor tiempo posible.
               </p>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-                <LinkButton href="#presupuesto">
+                <LinkButton href={company.phoneHref}>
+                  <Phone className="size-4" />
+                  {company.phone}
+                </LinkButton>
+                <LinkButton href="#presupuesto" variant="outline">
                   Pedir presupuesto
                 </LinkButton>
               </div>

@@ -1,4 +1,4 @@
-import { ShieldCheck, Mail, MapPin } from "lucide-react"
+import { ShieldCheck, Phone, Mail, MapPin } from "lucide-react"
 import { company, services, pests } from "@/lib/site-data"
 
 export function SiteFooter() {
@@ -20,6 +20,10 @@ export function SiteFooter() {
               eficaces y garantizados para hogares y empresas.
             </p>
             <div className="mt-5 space-y-2 text-sm">
+              <a href={company.phoneHref} className="flex items-center gap-2 text-background/80 hover:text-background">
+                <Phone className="size-4 text-primary" />
+                {company.phone}
+              </a>
               <a href={`mailto:${company.email}`} className="flex items-center gap-2 text-background/80 hover:text-background">
                 <Mail className="size-4 text-primary" />
                 {company.email}

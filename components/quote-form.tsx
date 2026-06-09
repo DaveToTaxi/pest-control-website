@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { CheckCircle2, Mail, MapPin, Clock } from "lucide-react"
+import { CheckCircle2, Phone, Mail, MapPin, Clock } from "lucide-react"
 import { company, pests } from "@/lib/site-data"
 
 const clientTypes = ["Particular", "Comunidad", "Empresa / Comercio", "Hostelería"]
@@ -25,6 +25,7 @@ export function QuoteForm() {
 
           <div className="mt-8 space-y-4">
             {[
+              { icon: Phone, label: company.phone, sub: "Lun a Sáb, 8:00 - 20:00", href: company.phoneHref },
               { icon: Mail, label: company.email, sub: "Respuesta el mismo día", href: `mailto:${company.email}` },
               { icon: MapPin, label: company.area, sub: "Servicio local y rápido" },
               { icon: Clock, label: "Urgencias 24/7", sub: "Disponibilidad inmediata" },
