@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Phone, Menu, X, ShieldCheck } from "lucide-react"
+import { Menu, X, ShieldCheck } from "lucide-react"
 import { LinkButton } from "@/components/link-button"
 import { company } from "@/lib/site-data"
 import { cn } from "@/lib/utils"
@@ -71,15 +71,6 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <a
-            href={company.phoneHref}
-            className="flex items-center gap-2 text-sm font-bold text-foreground"
-          >
-            <span className="flex size-9 items-center justify-center rounded-full bg-secondary text-primary">
-              <Phone className="size-4" />
-            </span>
-            {company.phone}
-          </a>
           <LinkButton href="#presupuesto" className="px-5 py-2 text-sm">
             Presupuesto gratis
           </LinkButton>
@@ -109,13 +100,6 @@ export function SiteHeader() {
             ))}
           </nav>
           <div className="mt-4 flex flex-col gap-3">
-            <a
-              href={company.phoneHref}
-              className="flex items-center justify-center gap-2 rounded-full border border-border py-2.5 font-bold text-foreground"
-            >
-              <Phone className="size-4 text-primary" />
-              {company.phone}
-            </a>
             <LinkButton
               href="#presupuesto"
               className="w-full"

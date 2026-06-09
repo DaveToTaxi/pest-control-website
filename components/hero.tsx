@@ -1,6 +1,6 @@
 "use client"
 
-import { Phone, Clock, CheckCircle2, Star, MapPin } from "lucide-react"
+import { Clock, CheckCircle2, Star, MapPin } from "lucide-react"
 import { LinkButton } from "@/components/link-button"
 import { company } from "@/lib/site-data"
 
@@ -28,10 +28,6 @@ export function Hero() {
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row">
             <LinkButton href="#presupuesto">Presupuesto en 1 minuto</LinkButton>
-            <LinkButton href={company.phoneHref} variant="outline">
-              <Phone className="size-4" />
-              {company.phone}
-            </LinkButton>
           </div>
 
           <ul className="mt-8 grid gap-3 sm:grid-cols-3">

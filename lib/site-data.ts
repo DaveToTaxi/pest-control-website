@@ -1,8 +1,8 @@
 export const company = {
   name: "Vexpro",
   tagline: "Control de Plagas",
-  phone: "91 000 00 00",
-  phoneHref: "tel:+34910000000",
+  phone: "",
+  phoneHref: "#presupuesto",
   area: "Majadahonda · Las Rozas · Pozuelo · Madrid",
   email: "info@vexpro.es",
 }
