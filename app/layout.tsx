@@ -18,7 +18,6 @@ export const metadata: Metadata = {
   title: 'Vexpro Control de Plagas | Majadahonda y Madrid',
   description:
     'Empresa profesional de control de plagas en Majadahonda. Desinsectación, desratización y desinfección con certificación HACCP. Presupuesto en 1 minuto.',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
